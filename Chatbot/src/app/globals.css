@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 40% 5%; /* Dark blueish-black */
+    --foreground: 210 40% 98%; /* Very light gray/white */
+
+    --card: 220 40% 10%; /* Slightly lighter dark blueish-black for cards */
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 40% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 260 85% 65%; /* Vibrant violet/purple */
+    --primary-foreground: 20 0% 100%; /* White text for primary */
+
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 40% 12%;
+    --muted-foreground: 210 40% 60%; /* Lighter muted text */
+
+    --accent: 300 80% 60%; /* Magenta/pink accent */
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 70% 55%; /* Adjusted destructive for dark theme */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 40% 20%; /* Darker border */
+    --input: 220 40% 18%; /* Dark input background */
+    --ring: 260 85% 70%; /* Primary color for ring */
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.75rem; /* Slightly larger radius */
+
+    /* Sidebar variables for consistency if used, adapted for dark theme */
+    --sidebar-background: 220 40% 8%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 260 85% 65%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 220 40% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 40% 20%;
+    --sidebar-ring: 260 85% 70%;
+  }
+
+  /* Remove .dark class as dark theme is default now */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
